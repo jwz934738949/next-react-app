@@ -1,15 +1,16 @@
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
+
 import { FlatCompat } from '@eslint/eslintrc';
-import { defineConfig } from 'eslint/config';
-// 导入 React 相关插件，为 JSX 和可访问性提供 ESLint 检查
-import EslintPluginReact from 'eslint-plugin-react';
-import EslintPluginJsxAlly from 'eslint-plugin-jsx-a11y';
-// 导入 eslint-config-prettier，关闭与 Prettier 冲突的 ESLint 规则
-import EslintConfigPrettier from 'eslint-config-prettier';
-// 导入 TypeScript 插件和解析器，为 TypeScript 提供 ESLint 支持
 import tsPlugin from '@typescript-eslint/eslint-plugin';
 import tsParser from '@typescript-eslint/parser'; // 确认导入解析器
+import { defineConfig } from 'eslint/config';
+// 导入 React 相关插件，为 JSX 和可访问性提供 ESLint 检查
+import EslintConfigPrettier from 'eslint-config-prettier';
+import EslintPluginJsxAlly from 'eslint-plugin-jsx-a11y';
+import EslintPluginReact from 'eslint-plugin-react';
+// 导入 eslint-config-prettier，关闭与 Prettier 冲突的 ESLint 规则
+// 导入 TypeScript 插件和解析器，为 TypeScript 提供 ESLint 支持
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);

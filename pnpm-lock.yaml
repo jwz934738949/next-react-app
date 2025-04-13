@@ -78,6 +78,9 @@ importers:
       lint-staged:
         specifier: ^15.2.2
         version: 15.5.1
+      postcss:
+        specifier: ^8.5.3
+        version: 8.5.3
       prettier:
         specifier: ^3.5.3
         version: 3.5.3
